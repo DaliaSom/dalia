@@ -1,12 +1,12 @@
 <!doctype html>
-<head><title>Prima pagina</title></head>
+<head><title>Prima pagina!</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
     <img id="lampadina" src="lampadina.jpg" width="300" height="350">
     <button type="button" style="background-color:yellow;margin-left:0%;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%" onclick="alert('Questa pagina è ancora in fase di produzione')">Clicca per maggiori informazioni!</button>
 
  
-    <input type="button" value="Spegni la luce" id="button1" onclick="myFunction();cambia();"/>
+    <input type="button" value="Spegni la luce" id="button1" onclick="myFunction();cambia();cambia2();"/>
     
 <script>
     
@@ -19,8 +19,16 @@ function myFunction() {
     }
 }  
     
-    function cambia() {
+function cambia() {
+    document.getElementById("button1").value="Accendi la luce";
+}
+    
+function cambia2() {
+    if (document.getElementById("lampadina").style.display="none") {
         document.getElementById("button1").value="Accendi la luce";
+    } else {
+        document.getElementById("button1").value="Spegni la luce";
+    }
 }
     
 </script>    
