@@ -1,5 +1,5 @@
 <!doctype html>
-<head><title>Prima pagina</title></head>
+<head><title>Prima pagina!</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
     <img id="lampadina" src="lampadina.jpg" width="300" height="350">
@@ -13,14 +13,14 @@
 function spegne() {
     document.getElementById("lampadina").style.display = "none";
     document.getElementById("button1").style.display = "none";
-    document.getElementById("button2").style.display= "block"
+    document.getElementById("button2").style.display= "block";
 }  
     
-//function spegne() {
-    //document.getElementById("lampadina").style.display = "none";
-    //document.getElementById("button2").style.display="block";
-    //document.getElementById("button1").style.display = "none";
-//}  
+function spegne() {
+    document.getElementById("lampadina").style.display = "block";
+    document.getElementById("button2").style.display= "none";
+    document.getElementById("button1").style.display = "block";
+}  
     
     
 </script>    
