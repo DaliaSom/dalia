@@ -1,13 +1,18 @@
 <!doctype html>
-<head><title>Prima pagina</title></head>
+<head><title>Prima pagina!</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
     <img id="lampadina" src="lampadina.jpg" width="300" height="350">
     <button type="button" style="background-color:yellow;margin-left:0%;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%" onclick="alert('Questa pagina è ancora in fase di produzione')">Clicca per maggiori informazioni!</button>
 
-    <button type="button" onclick="myFunction()">Spegni la luce</button>
+    <button type="button" id="button1" onclick="someFunc()">Spegni la luce</button>
  
 <script>
+function someFunc(){
+    myFunction();
+    change();
+}    
+    
 function myFunction() {
     var x = document.getElementById("lampadina");
     if (x.style.display === "none") {
@@ -16,6 +21,16 @@ function myFunction() {
         x.style.display = "none";
     }
 }  
+    
+    function change() {
+  var change = document.getElementById("button1");
+  if (change.innerHTML == "Spegni la luce"); {
+    change.innerHTML = "Accendi la luce";
+  } else {
+    change.innerHTML = "Spegni la luce";
+  }
+}
+    
 </script>    
 </body>
 </html>
