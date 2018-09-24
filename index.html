@@ -1,13 +1,14 @@
 <!doctype html>
-<head><title>Prima pagina</title></head>
+<head><title>Prima pagina!</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
     <img id="lampadina" src="lampadina.jpg" width="300" height="350">
-    <button type="button" style="background-color:yellow;margin-left:0%;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%" onclick="alert('Questa pagina è ancora in fase di produzione')">Clicca per maggiori informazioni!</button>
+    <input type="button" style="background-color:yellow;margin-left:0%;margin-right:auto;display:block;margin-top:18%;margin-bottom:3%" onclick="alert('Questa pagina è ancora in fase di produzione')">Clicca per maggiori informazioni!</button>
 
  
     <input type="button" id="button1" value="Spegni la luce"  onclick="spegne()"/>
     <input type="button" id="button2" value="Accendi la luce"  style="display:none" onclick="accende()"/>
+
 <script>
     
 function spegne() {
@@ -21,8 +22,7 @@ function accende() {
     document.getElementById("button2").style.display= "none";
     document.getElementById("button1").style.display = "block";
 }  
-    
-    
+     
 </script>    
 </body>
 </html>
