@@ -2,7 +2,7 @@
 <head><title>Prima pagina</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
-    <input type="heading" id"heading1" value="boh" />
+    <input type="heading" value="boh" />
     
     <input type="button" id="button1" value="Spegni la luce"  style="position:absolute; left:auto" onclick="spegne(); nero();"/>
     <input type="button" id="button2" value="Accendi la luce"  style="display:none" onclick="accende(); bianco();"/>
@@ -21,7 +21,7 @@ function spegne() {
     
 function nero() {
     document.body.style.backgroundColor="black";
-    document.heading1.style.headingColor="white";
+
 }
     
 function accende() {
