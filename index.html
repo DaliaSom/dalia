@@ -1,14 +1,14 @@
 <!doctype html>
-<head><title>Prima pagina!</title></head>
+<head><title>Prima pagina</title></head>
 <body>
     <h1>Ecco la mia prima pagina in HTML!</h1> 
     
-    <input type="button" id="button1" value="Spegni la luce"  style="position:absolute; left:15px" onclick="spegne()"/>
-    <input type="button" id="button2" value="Accendi la luce"  style="display:none" onclick="accende()"/>
+    <input type="button" id="button1" value="Spegni la luce"  style="position:absolute; left:15px" onclick="spegne(); nero();"/>
+    <input type="button" id="button2" value="Accendi la luce"  style="display:none" onclick="accende(); bianco();"/>
     
    
     <input type="button" value="Clicca per maggiori informazioni!" style="background-color:yellow; display:block; position:absolute; top: 30px; left:600px" onclick="alert('Questa pagina è ancora in fase di produzione')"/>
-   <img id="lampadina" src="lampadina.jpg" width="300" height="350">
+    <img id="lampadina" src="lampadina.jpg" width="300" height="350">
         
 <script>
     
@@ -18,11 +18,19 @@ function spegne() {
     document.getElementById("button2").style.display= "block";
 }  
     
+function nero() {
+    document.body.style.backgroundcolor="black";
+}
+    
 function accende() {
     document.getElementById("lampadina").style.display = "block";
     document.getElementById("button2").style.display= "none";
     document.getElementById("button1").style.display = "block";
 }  
+    
+function bianco() {
+    document.body.style.backgroundcolor="white";
+}
      
 </script>    
 </body>
