@@ -1,11 +1,9 @@
 <!doctype html>
-<head><title>Prima pagina</title></head>
+<head><title>Prima pagina!</title></head>
 
 <body>
     <h1 id="testo">Ecco la mia prima pagina in HTML!</h1> 
-   
-    <div id="about">About Snakelane</div>
-    
+  
     <input type="button" id="button1" value="Spegni la luce"  style="position:absolute; left:auto" onclick="spegne(); nero();"/>
     <input type="button" id="button2" value="Accendi la luce"  style="display:none" onclick="accende(); bianco();"/>
 
@@ -34,6 +32,7 @@ function accende() {
     
 function bianco() {
     document.body.style.backgroundColor="white";
+    document.getElementById("testo").style.color = "black";
 }
      
 </script>    
